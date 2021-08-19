@@ -1,6 +1,6 @@
 import { readFile } from "fs/promises";
 
-class Exercise2{
+class Exercise2 {
     constructor (countriesInfo) {
         this.countries = countriesInfo;
     }
@@ -9,7 +9,7 @@ class Exercise2{
         return this.countries.length;
      };
 
-     findCountriesBySpokenLanguege (language) {
+     findCountriesBySpokenLanguage (language) {
         let result = [];
         this.countries.forEach(country => {
             if (country.languages.includes(language) )
@@ -57,16 +57,11 @@ class Exercise2{
             return a[1] - b[1];
         });
 
-        return result.toString().split(',').join(':');
+        return result.splice(-1).toString().split(',').join(':');
      };
 
 }
 
 const exercise2 = new Exercise2(JSON.parse(await readFile("./exercise2/countries.json")));
-
-console.log(`Total of Countries ${exercise2.countCountries()}`);
-console.log(`Countries that spoken 'de' ${JSON.stringify(exercise2.findCountriesBySpokenLanguege('de'))}`);
-console.log(`Country with Highest Number Of Oficial Languages is ${exercise2.findCountriesWithHighestNumberOfOfficialLanguages().country}`);
-console.log(`Most common offcial languages ${exercise2.findMostCommonOfficialLanguagesOfAllCountries()}`);
 
 export {exercise2};

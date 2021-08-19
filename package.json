@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start":"node .",
     "test": "c8 mocha ./**/*.test.js"
   },
   "repository": {
