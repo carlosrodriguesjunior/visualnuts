@@ -25,4 +25,6 @@ class Exercise1{
 
 const exercise1 = new Exercise1();
 
+exercise1.print();
+
 export {exercise1};
