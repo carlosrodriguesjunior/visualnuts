@@ -23,6 +23,6 @@ class Exercise1{
 
 }
 
-let exercise1 = new Exercise1();
+const exercise1 = new Exercise1();
 
-module.exports = exercise1;
+export {exercise1};

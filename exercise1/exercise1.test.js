@@ -1,7 +1,6 @@
-const assert = require('assert');
-const sinon = require('sinon');
-
-const exercise1 = require('./index');
+import assert from 'assert';
+import sinon from 'sinon';
+import {exercise1} from './exercise1.js';
 
 const VISUAL = 'Visual';
 const NUTS = 'Nuts';
