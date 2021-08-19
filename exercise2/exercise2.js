@@ -57,16 +57,16 @@ class Exercise2{
             return a[1] - b[1];
         });
 
-        return result.slice(-1);
+        return result.toString().split(',').join(':');
      };
 
 }
 
 const exercise2 = new Exercise2(JSON.parse(await readFile("./exercise2/countries.json")));
 
-console.log(exercise2.countCountries());
-console.log(exercise2.findCountriesBySpokenLanguege('de'));
-console.log(exercise2.findCountriesWithHighestNumberOfOfficialLanguages());
-console.log(exercise2.findMostCommonOfficialLanguagesOfAllCountries());
+console.log(`Total of Countries ${exercise2.countCountries()}`);
+console.log(`Countries that spoken 'de' ${JSON.stringify(exercise2.findCountriesBySpokenLanguege('de'))}`);
+console.log(`Country with Highest Number Of Oficial Languages is ${exercise2.findCountriesWithHighestNumberOfOfficialLanguages().country}`);
+console.log(`Most common offcial languages ${exercise2.findMostCommonOfficialLanguagesOfAllCountries()}`);
 
 export {exercise2};
