@@ -1,0 +1,23 @@
+{
+  "name": "visualnuts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carlosrodriguesjunior/visualnuts.git"
+  },
+  "author": "Carlos Junior",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/carlosrodriguesjunior/visualnuts/issues"
+  },
+  "homepage": "https://github.com/carlosrodriguesjunior/visualnuts#readme",
+  "devDependencies": {
+    "mocha": "^9.0.3",
+    "sinon": "^11.1.2"
+  }
+}
